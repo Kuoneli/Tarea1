@@ -8,8 +8,13 @@ namespace Tarea1
 {
     internal class Program
     {
+        static int i;
         static void Main(string[] args)
         {
+
+            Menu menu = new Menu();
+            menu.mostrarMenu();
+
         }
     }
 }
