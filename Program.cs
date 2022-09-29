@@ -56,18 +56,7 @@ namespace Tarea1
                         modificarDatos();
                             break;
                     case 5:
-                        Console.WriteLine("");
-                        Console.WriteLine("                                                    Reporte de Paso");
-                        Console.WriteLine("Numero de Factura " + " Placa " + " Tipo de Vehiculo " + " Caseta " + " Monto por Vehiculo " + " Monto de Pago " + " Vuelto ");
-                        Console.WriteLine("=============================================================================================");
-                        for (x = 0; x < facturas.Length; x++)
-                        {
-                            lista += facturas[x] + " " + placa[x] + " " + vehiculo[x] + " " + caseta[x] + " " + monto[x] + " " + pago[x] + " " + vuelto[i] + "\n";
-                            total += monto[x];
-                        }
-                        Console.WriteLine("=============================================================================================");
-                        Console.WriteLine("Total: " + total + "Cantidad de Vehiculos: " + facturas[x]);
-                        Console.WriteLine("=============================================================================================");
+                        mostrarDatos(); 
                         break;
                     case 6:
                         //Salida
@@ -376,7 +365,18 @@ namespace Tarea1
         }
         public static void mostrarDatos()
         {
-
+            Console.WriteLine("");
+            Console.WriteLine("                                                    Reporte de Paso");
+            Console.WriteLine("Numero de Factura " + " Placa " + " Tipo de Vehiculo " + " Caseta " + " Monto por Vehiculo " + " Monto de Pago " + " Vuelto ");
+            Console.WriteLine("=============================================================================================");
+            for (x = 0; x < facturas.Length; x++)
+            {
+                lista += facturas[x] + " " + placa[x] + " " + vehiculo[x] + " " + caseta[x] + " " + monto[x] + " " + pago[x] + " " + vuelto[i] + "\n";
+                total += monto[x];
+            }
+            Console.WriteLine("=============================================================================================");
+            Console.WriteLine("Total: " + total + "Cantidad de Vehiculos: " + facturas[x]);
+            Console.WriteLine("=============================================================================================");
         }
 
     }
