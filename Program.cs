@@ -200,7 +200,7 @@ namespace Tarea1
         {
             Console.WriteLine("Ingrese el numero de placa que desea Consultar");
             nPlaca = Console.ReadLine();
-            for (x = 0; i < placa.Length; x++)
+            for (x = 0; x < placa.Length; x++)
             {
                 if (placa[x].Equals(nPlaca))
                 {
@@ -228,7 +228,7 @@ namespace Tarea1
 
             Console.WriteLine("Ingrese el numero de placa que desea Consultar");
             nPlaca = Console.ReadLine();
-            for (x = 0; i < placa.Length; x++)
+            for (x = 0; x < placa.Length; x++)
             {
                 if (placa[x].Equals(nPlaca))
                 {
